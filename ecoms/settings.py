@@ -46,9 +46,10 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-
     "corsheaders.middleware.CorsMiddleware",
+    'django.middleware.security.SecurityMiddleware',
+    
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -61,6 +62,8 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'ecoms.urls'
 
 TEMPLATES = [
+
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
