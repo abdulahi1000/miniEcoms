@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-wsd=t8f)h)1^-qocafrftum0myr-cqzs)%ge8z@=opt==&4)d2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['speedy-ecoms.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['speedy-ecoms.herokuapp.com', '127.0.0.1', 'https://speedy-ecoms.herokuapp.com/']
 
 
 # Application definition
