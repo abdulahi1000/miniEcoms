@@ -13,6 +13,7 @@ class Product(models.Model):
         max_digits=7, decimal_places=2, null=True, blank=True)
     countInStock = models.IntegerField(null=True, blank=True, default=0)
     createdAt = models.DateTimeField(auto_now_add=True)
-
+    updatedAt = models.DateTimeField(auto_now=True, blank=True, null=True)
+ 
     def __str__(self):
         return self.title
